@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Contacto.scss';
 
-const EMAIL = 'hola@frisson.studio'; // ← cambia por tu correo
+const EMAIL = 'frissonstudio7@gmail.com'; // ← cambia por tu correo
 
 function Mock({ variant }) {
     return (
