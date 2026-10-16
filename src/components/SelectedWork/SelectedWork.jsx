@@ -67,7 +67,7 @@ function SelectedWork() {
 
                     <div className="project-card__mockup">
                         <img
-                            src="/projects/cristian.png"
+                            src="/projects/Cristianveas/maccristian.svg"
                             alt="Proyecto 02"
                         />
                     </div>
@@ -107,7 +107,7 @@ function SelectedWork() {
 
                     <div className="project-card__mockup">
                         <img
-                            src="/projects/Desaloon.png"
+                            src="/projects/Desaloon/macdesalon.svg"
                             alt="Proyecto 03"
                         />
                     </div>
