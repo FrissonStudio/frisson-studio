@@ -1,0 +1,450 @@
+$cream: #ede6db;
+$ink: #2f2b2a;
+$muted: #6e655f;
+
+$bg: #1a1a1a;
+$title: #d4c5a9;
+$text: #ccc2af;
+$gold: #c8a97e;
+
+$font-serif: 'Fraunces', Georgia, serif;
+$font-sans: 'Figtree', system-ui, sans-serif;
+
+$bp-tablet: 1024px;
+$bp-mobile: 640px;
+
+@mixin serif($weight: 300, $opsz: 144) {
+    font-family: $font-serif;
+    font-weight: $weight;
+    font-variation-settings: 'SOFT' 100,
+    'opsz'#{$opsz};
+}
+
+.project-detail {
+    // cuánto "sube" la portada sobre la sección oscura
+    --overlap: clamp(72px, 12vw, 180px);
+
+    background: $cream;
+    font-family: $font-sans;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    // ---------- Hero ----------
+    &__hero {
+        position: relative;
+        overflow-x: clip; // recorta los anillos sin cortar la portada hacia abajo
+        color: $ink;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 30%;
+            right: -12vw;
+            width: clamp(320px, 52vw, 720px);
+            aspect-ratio: 1;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: repeating-radial-gradient(circle,
+                    transparent 0 46px,
+                    rgba($ink, 0.1) 46px 47px);
+            -webkit-mask-image: radial-gradient(circle, #000 25%, transparent 70%);
+            mask-image: radial-gradient(circle, #000 25%, transparent 70%);
+            pointer-events: none;
+        }
+    }
+
+    &__hero-wrap {
+        position: relative;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: clamp(24px, 4vw, 56px) clamp(20px, 5vw, 48px) 0;
+    }
+
+    &__back {
+        display: inline-block;
+        color: $muted;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $ink;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $ink;
+            outline-offset: 4px;
+        }
+    }
+
+    &__category {
+        /*  margin: clamp(40px, 6vw, 88px) 0 16px; */
+        color: $muted;
+        font-size: 1rem;
+    }
+
+    &__title {
+        @include serif(300, 144);
+        margin: 0;
+        font-size: clamp(3rem, 9vw, 8rem);
+        line-height: 0.98;
+        letter-spacing: -0.03em;
+        animation: detail-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    &__description {
+        max-width: 40ch;
+        margin: clamp(20px, 3vw, 32px) 0 0;
+        color: $muted;
+        font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+        line-height: 1.5;
+    }
+
+    &__meta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 24px 32px;
+        margin: clamp(40px, 6vw, 72px) 0;
+    }
+
+    &__meta-item {
+        padding-top: 14px;
+        border-top: 1px solid rgba($ink, 0.25);
+
+        dt {
+            margin: 0 0 4px;
+            color: $muted;
+            font-size: 0.9rem;
+        }
+
+        dd {
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    }
+
+    // La portada cruza la línea entre la sección crema y la oscura
+    &__cover-wrap {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__cover {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        filter: drop-shadow(0 28px 32px rgba(0, 0, 0, 0.35));
+    }
+
+    // ---------- Capítulos (sección oscura) ----------
+    &__chapters {
+        position: relative;
+        z-index: 1;
+        margin-top: calc(var(--overlap) * -1);
+        padding-top: var(--overlap);
+        background: $bg;
+        color: $text;
+        border-radius: clamp(28px, 4vw, 56px) clamp(28px, 4vw, 56px) 0 0;
+    }
+
+    &__chapters-wrap {
+        display: grid;
+        gap: clamp(88px, 12vw, 176px);
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 48px) clamp(80px, 5vw, 160px);
+    }
+
+    // ---------- Paso ----------
+    &__step {
+        display: grid;
+        grid-template-columns: minmax(120px, 0.22fr) 1fr;
+        gap: clamp(24px, 5vw, 80px);
+        scroll-margin-top: 32px;
+    }
+
+    // el número se queda fijo mientras lees el paso
+    &__step-head {
+        position: sticky;
+        top: 80px;
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__step-number {
+        @include serif(300, 144);
+        color: $gold;
+        font-size: clamp(4rem, 9vw, 8rem);
+        line-height: 0.85;
+        letter-spacing: -0.04em;
+    }
+
+    &__step-label {
+        color: $title;
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+
+    &__step-body {
+        display: grid;
+        gap: clamp(32px, 4vw, 56px);
+        min-width: 0;
+    }
+
+    &__step-title {
+        @include serif(300, 144);
+        max-width: 18ch;
+        margin: 0;
+        color: $title;
+        font-size: clamp(2rem, 4.6vw, 3.75rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+    }
+
+    &__step-copy {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__step-text {
+        max-width: 62ch;
+        margin: 0;
+        color: $text;
+        font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+        line-height: 1.65;
+    }
+
+    // ---------- Puntos clave ----------
+    &__points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid rgba($gold, 0.3);
+    }
+
+    &__point {
+        display: grid;
+        grid-template-columns: minmax(120px, 0.28fr) 1fr;
+        gap: 8px 24px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba($gold, 0.18);
+    }
+
+    &__point-label {
+        margin: 0;
+        color: $gold;
+        font-family: $font-sans;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    &__point-text {
+        max-width: 56ch;
+        margin: 0;
+        color: rgba($text, 0.85);
+    }
+
+    // ---------- Métricas ----------
+    &__metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__metric {
+        padding-top: 16px;
+        border-top: 1px solid rgba($gold, 0.3);
+    }
+
+    &__metric-value {
+        @include serif(300, 144);
+        display: block;
+        color: $gold;
+        font-size: clamp(1.8rem, 3vw, 4.5rem);
+        line-height: 1;
+        letter-spacing: -0.02em;
+    }
+
+    &__metric-label {
+        display: block;
+        max-width: 28ch;
+        margin-top: 10px;
+        color: rgba($text, 0.8);
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    // ---------- Medios ----------
+    &__media {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: clamp(20px, 2.5vw, 36px) clamp(16px, 2vw, 28px);
+    }
+
+    &__figure {
+        grid-column: span 12;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 0;
+
+        &--half {
+            grid-column: span 6;
+        }
+
+        &--third {
+            grid-column: span 4;
+        }
+    }
+
+    &__frame img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    // Captura plana: tarjeta con borde
+    &__figure--screen &__frame {
+        overflow: hidden;
+        border-radius: 20px;
+        border: 1px solid rgba($title, 0.12);
+        background: rgba($title, 0.05);
+    }
+
+    // PNG con forma propia (MacBook, celular): sin caja, solo luz y sombra
+    &__figure--mockup &__frame {
+        padding: clamp(8px, 2vw, 32px) clamp(8px, 2vw, 32px) 0;
+        background: radial-gradient(ellipse at 50% 85%,
+                rgba($gold, 0.18),
+                transparent 65%);
+
+        img {
+            filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.5));
+        }
+    }
+
+    &__caption {
+        color: rgba($text, 0.65);
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    // ---------- Responsive ----------
+    @media (max-width: $bp-tablet) {
+        &__figure--third {
+            grid-column: span 6;
+        }
+    }
+
+    @media (max-width: $bp-mobile) {
+        &__step {
+            grid-template-columns: 1fr;
+        }
+
+        &__step-head {
+            position: static;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 16px;
+        }
+
+        &__step-number {
+            font-size: 3.5rem;
+        }
+
+        &__point {
+            grid-template-columns: 1fr;
+            gap: 4px;
+        }
+
+        &__figure--half,
+        &__figure--third {
+            grid-column: span 12;
+        }
+    }
+
+    // ---------- Botones ----------
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: clamp(8px, 2vw, 24px);
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        border: 1px solid rgba($title, 0.3);
+        border-radius: 999px;
+        font-family: $font-sans;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.35s, color 0.35s, border-color 0.35s;
+
+        &:focus-visible {
+            outline: 2px solid $title;
+            outline-offset: 4px;
+        }
+
+        // secundario: mismo estilo que los filtros de Proyectos
+        &--ghost {
+            background: transparent;
+            color: $title;
+
+            &:hover {
+                border-color: $gold;
+                color: $gold;
+            }
+        }
+
+        // principal
+        &--solid {
+            background: $gold;
+            border-color: $gold;
+            color: $bg;
+
+            &:hover {
+                background: $title;
+                border-color: $title;
+            }
+        }
+    }
+}
+
+@keyframes detail-rise {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-detail__title {
+        animation: none;
+    }
+
+    .project-detail__back {
+        transition: none;
+    }
+}

@@ -1,0 +1,167 @@
+.selected-work {
+    position: relative;
+
+    background: #1A1A1A;
+    color: #EDE6DB;
+
+    padding: clamp(80px, 12vw, 180px) 5%;
+    padding-bottom: 0px;
+
+    &__projects {
+        position: relative;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(28px, 4vw, 52px);
+
+        width: 90%;
+        margin: clamp(-380px, -26vw, -120px) auto 0;
+    }
+
+    &__content {
+        width: 90%;
+        margin: clamp(80px, 12vw, 180px) auto 0;
+    }
+
+    &__content h2 {
+        font-family: 'Fraunces', serif;
+        font-size: clamp(26px, 3vw, 32px);
+        font-weight: 600;
+    }
+
+    &__content a {
+        display: inline-block;
+        margin-top: 30px;
+
+        color: #C8A97E;
+        font-family: 'Figtree', sans-serif;
+        font-size: clamp(17px, 2vw, 20px);
+        text-decoration: none;
+    }
+}
+
+.project-card {
+    position: relative;
+    z-index: 2;
+
+    &__mockup {
+        width: 100%;
+    }
+
+    &__mockup img {
+        display: block;
+        width: 100%; // O el tamaño en px / rem que prefieras
+        height: auto;
+        margin: 0 auto; // Centra el bloque horizontalmente
+    }
+
+    &__info {
+        margin-top: 24px;
+    }
+
+    &__category {
+        color: #CCC2AF;
+        font-family: 'Figtree', sans-serif;
+        font-size: 16px;
+    }
+
+    &__title {
+        margin-top: 10px;
+
+        color: #C8A97E;
+        font-family: 'Fraunces', serif;
+        font-size: clamp(24px, 2.6vw, 30px);
+        font-weight: 600;
+    }
+
+    &__description {
+        margin-top: 10px;
+
+        color: #CCC2AF;
+        font-family: 'Figtree', sans-serif;
+        font-size: clamp(16px, 1.6vw, 18px);
+        line-height: 1.4;
+    }
+}
+
+.selected-work {
+
+    &__action {
+        display: flex;
+        justify-content: center; // Centra el texto dentro del botón
+        align-items: center;
+
+        width: 90%; // Ocupa el 80% del ancho del contenedor
+        margin-left: auto; // Margin auto a los lados centra todo el bloque de 80%
+        margin-right: auto;
+        margin-top: clamp(3rem, 6vw, 5rem);
+
+        padding-bottom: 1rem; // Mantiene el texto casi pegado a la línea
+        border-bottom: 1.5px solid #C8A97E; // La línea de 80% de ancho
+
+        color: #C8A97E;
+        font-family: 'Figtree', sans-serif;
+        font-size: clamp(1rem, 1.5vw, 1rem);
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        text-align: center;
+
+        transition: opacity 0.3s ease, border-color 0.3s ease;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+/* Tablet: 2 columnas */
+@media (max-width: 1024px) {
+    .selected-work {
+        &__projects {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            margin-top: -160px;
+        }
+
+        &__content {
+            width: 100%;
+        }
+    }
+}
+
+/* Móvil: 1 columna */
+@media (max-width: 640px) {
+    .selected-work {
+        padding: 80px 24px;
+
+        &__projects {
+            grid-template-columns: 1fr;
+            gap: 48px;
+            margin-top: -130px;
+        }
+
+        &__content {
+            margin-top: 80px;
+        }
+
+        &__content a {
+            margin-top: 24px;
+        }
+    }
+
+    .project-card {
+        &__info {
+            margin-top: 16px;
+        }
+
+        &__mockup img {
+            width: 80%;
+
+        }
+    }
+
+
+
+}

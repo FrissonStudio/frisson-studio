@@ -1,0 +1,134 @@
+.process {
+    background: #1A1A1A;
+    color: #EDE6DB;
+
+    // sin padding derecho: las barras nacen del borde de la pantalla
+    padding: clamp(80px, 7vw, 180px) 0 clamp(80px, 7vw, 180px) 10%;
+    overflow: hidden;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+        gap: clamp(40px, 6vw, 96px);
+    }
+
+    &__title {
+        font-family: 'Fraunces', serif;
+        font-size: clamp(28px, 3.4vw, 46px);
+        font-weight: 500;
+        line-height: 1.15;
+        text-transform: uppercase;
+
+        span {
+            display: block;
+            margin-top: 0.3em;
+            color: #C8A97E;
+        }
+    }
+
+    &__chart {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(50px, 1.4vw, 16px);
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; // todo pegado al borde derecho
+        gap: clamp(14px, 2vw, 28px);
+    }
+
+    &__label {
+        flex-shrink: 0;
+
+        font-family: 'Figtree', sans-serif;
+        font-size: clamp(15px, 1.5vw, 20px);
+        white-space: nowrap;
+        color: #CCC2AF;
+
+        b {
+            color: #C8A97E;
+            font-weight: 600;
+        }
+
+        // entra después de que la barra empieza a crecer
+        opacity: 0;
+        transform: translateX(24px);
+        transition: opacity 0.6s ease,
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: calc(var(--i) * 0.15s + 0.35s);
+    }
+
+    &__bar {
+        flex-shrink: 0;
+        width: var(--w);
+        height: clamp(44px, 5vw, 68px);
+
+        // de oscuro a dorado según avanza el proceso
+        background: color-mix(in srgb, #C8A97E calc((var(--i) + 1) * 20%), #2E2E2E);
+
+        // crece desde el borde derecho hacia la izquierda
+        transform: scaleX(0);
+        transform-origin: right center;
+        transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: calc(var(--i) * 0.15s);
+        border-radius: 12px 0 0 12px;
+    }
+
+    &.is-visible &__bar {
+        transform: scaleX(1);
+    }
+
+    &.is-visible &__label {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Tablet: frase arriba, gráfico debajo */
+@media (max-width: 900px) {
+    .process {
+        &__inner {
+            grid-template-columns: 1fr;
+            padding-right: 5%; // la frase respeta el margen; el gráfico lo ignora
+        }
+
+        &__chart {
+            margin-right: -5%; // las barras siguen tocando el borde
+        }
+    }
+}
+
+/* Móvil: barras más cortas para que quepa la etiqueta */
+@media (max-width: 640px) {
+    .process {
+        padding-left: 24px;
+
+        &__inner {
+            padding-right: 24px;
+        }
+
+        &__chart {
+            margin-right: -24px;
+        }
+
+        &__bar {
+            width: calc(var(--w) * 0.8);
+        }
+    }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+
+    .process__bar,
+    .process__label {
+        transition: none;
+    }
+}

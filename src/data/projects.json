@@ -1,0 +1,1564 @@
+[
+    {
+        "slug": "huincacara-lodge",
+        "number": "01",
+        "title": "Huincacara Lodge",
+        "siteUrl": "https://www.huincacaralodge.cl",
+        "category": [
+            "Desarrollo Web",
+            "Rediseño"
+        ],
+        "description": "Una experiencia digital que conecta con el lugar real.",
+        "summary": "Rediseño de sitio web convertido en experiencia digital para conectar con el lugar real.",
+        "cardImage": "/projects/huincacara-lodge/huinca2.svg",
+        "cover": "/projects/huincacara-lodge/huinca2.svg",
+        "year": "2026",
+        "projectInfo": {
+            "type": "Proyecto real",
+            "role": [
+                "Diseño UX/UI",
+                "Diseño web",
+                "Desarrollo web"
+            ],
+            "tools": [
+                "Figma",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP",
+                "WordPress"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Un lugar con carácter y un sitio que no lo contaba",
+                "content": [
+                    "El lodge ofrece algo que se siente apenas llegas: paisaje, calma y atención cercana. Su sitio web, en cambio, mostraba poco de eso y no ayudaba a decidir una reserva.",
+                    "El desafío era traducir la experiencia real a una experiencia digital clara, rápida y fiel al lugar."
+                ],
+                "points": [
+                    {
+                        "label": "Imagen",
+                        "text": "El sitio no transmitía la calidad ni el entorno del lodge."
+                    },
+                    {
+                        "label": "Navegación",
+                        "text": "Encontrar habitaciones, precios o cómo llegar tomaba demasiados pasos."
+                    },
+                    {
+                        "label": "Móvil",
+                        "text": "La mayoría de los visitantes llega desde el celular y la experiencia no estaba pensada para eso."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/huincacara-lodge/antes1.png",
+                        "alt": "Captura del sitio anterior del lodge",
+                        "caption": "El sitio anterior"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Entender cómo decide quien quiere visitar",
+                "content": [
+                    "Antes de diseñar revisé el sitio existente, el contenido disponible y la forma en que los visitantes buscan información para planear una estadía.",
+                    "De ahí salieron las prioridades: mostrar el lugar primero, responder las dudas frecuentes sin esfuerzo y dejar la reserva a un paso."
+                ],
+                "points": [
+                    {
+                        "label": "Visitantes",
+                        "text": "Buscan fotos reales, ubicación y disponibilidad antes que textos largos."
+                    },
+                    {
+                        "label": "Contenido",
+                        "text": "Había buen material fotográfico, pero mal organizado y sin jerarquía."
+                    },
+                    {
+                        "label": "Prioridad",
+                        "text": "Que cada pantalla lleve de forma natural hacia consultar o reservar."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/huincacara-lodge/contenido.JPG",
+                        "alt": "Mapa de sitio propuesto",
+                        "caption": "Nueva estructura de contenidos"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/huincacara-lodge/prioridades.JPG",
+                        "alt": "Tablero con prioridades del proyecto",
+                        "caption": "Prioridades definidas"
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Del boceto al sitio en producción",
+                "content": [
+                    "Partí con wireframes para validar la estructura, seguí con el diseño visual en Figma y terminé con el desarrollo en WordPress, cuidando que el equipo pudiera administrar el contenido por su cuenta."
+                ],
+                "points": [
+                    {
+                        "label": "Wireframes",
+                        "text": "Estructura y recorrido de cada página, sin distracciones visuales."
+                    },
+                    {
+                        "label": "Diseño en Figma",
+                        "text": "Paleta, tipografía y componentes pensados desde el paisaje del lodge."
+                    },
+                    {
+                        "label": "Desarrollo",
+                        "text": "Maquetación a medida, funcionalidad en PHP y contenido editable en WordPress."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/huincacara-lodge/wiframes.JPG",
+                        "alt": "Wireframes de las páginas principales",
+                        "caption": "Wireframes"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/huincacara-lodge/mockup.JPG",
+                        "alt": "Diseño visual en Figma",
+                        "caption": "Diseño en Figma"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/huincacara-lodge/desarrollo.JPG",
+                        "alt": "Desarrollo del sitio en código",
+                        "caption": "Desarrollo"
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Un sitio que se siente como estar ahí",
+                "content": [
+                    "La fotografía abre cada página y guía la lectura. El texto es breve, la navegación es directa y las acciones importantes siempre están a la vista, en escritorio y en celular."
+                ],
+                "points": [
+                    {
+                        "label": "Visual",
+                        "text": "Imágenes grandes y una paleta tomada del entorno natural."
+                    },
+                    {
+                        "label": "Claridad",
+                        "text": "Habitaciones, servicios y ubicación en un recorrido simple."
+                    },
+                    {
+                        "label": "Autonomía",
+                        "text": "El equipo del lodge actualiza fotos, textos y tarifas sin depender de nadie."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/huincacara-lodge/domohero2.png",
+                        "alt": "Página de inicio del nuevo sitio en un MacBook",
+                        "caption": "Página de inicio"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/huincacara-lodge/tablet.png",
+                        "alt": "Página de habitaciones del nuevo sitio",
+                        "caption": "Habitaciones"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/huincacara-lodge/mobile.png",
+                        "alt": "Versión móvil del nuevo sitio",
+                        "caption": "Versión móvil"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Un sitio listo para recibir huéspedes",
+                "content": [
+                    "El lodge cuenta hoy con una presencia digital a la altura del lugar: más clara para quien visita, más simple para quien la administra."
+                ],
+                "metrics": [
+                    {
+                        "value": "+00%",
+                        "label": "Reemplaza con un resultado real, por ejemplo consultas recibidas"
+                    },
+                    {
+                        "value": "0 s",
+                        "label": "Reemplaza con un resultado real, por ejemplo tiempo de carga"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Contenido editable por el equipo del lodge"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Cristian-Veas",
+        "number": "02",
+        "title": "Cristian Veas",
+        "siteUrl": "https://www.CristianVeas.cl",
+        "category": [
+            "Desarrollo Web",
+            "Rediseño",
+            "React",
+            "WordPress"
+        ],
+        "description": "Transformación integral de un catálogo masivo de eventos en una experiencia de cotización ágil, moderna y optimizada.",
+        "summary": "Rediseño integral y optimización de catálogo con +2.000 productos, React, Vite y cotización por WhatsApp.",
+        "cardImage": "/projects/Cristianveas/maccristian.svg",
+        "cover": "/projects/Cristianveas/maccristian.svg",
+        "year": "2026",
+        "projectInfo": {
+            "type": "Proyecto real",
+            "role": [
+                "Diseño UX/UI",
+                "Investigación de usuarios",
+                "Diseño web",
+                "Desarrollo web full-stack",
+                "Optimización WordPress"
+            ],
+            "tools": [
+                "Figma",
+                "React",
+                "Vite",
+                "WordPress",
+                "PHP",
+                "JavaScript",
+                "HTML",
+                "CSS/SCSS"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Un catálogo masivo desatendido y sin criterio visual",
+                "content": [
+                    "El negocio —enfocado en la venta de productos de iluminación, sonido, escenarios y equipamiento para eventos para todo público— contaba con más de 2.000 productos y 9.000 imágenes acumuladas en WordPress.",
+                    "El sitio venía arrastrando años sin mantención: plugins sin actualizar y sin uso, lentitud crítica, buscador deficiente, ausencia total de filtros y un diseño que no reflejaba la magnitud ni calidad de su oferta, limitándose a ser un catálogo confuso sin una experiencia pensada para el usuario ni para mobile."
+                ],
+                "points": [
+                    {
+                        "label": "Deuda técnica",
+                        "text": "9.000 imágenes y 2.000 productos en un WordPress obsoleto, sin optimización ni mantención previa."
+                    },
+                    {
+                        "label": "Navegación",
+                        "text": "Buscador que funcionaba mal, cero filtros de búsqueda y un diseño que no guiaba al cliente."
+                    },
+                    {
+                        "label": "Experiencia",
+                        "text": "Falta de criterio visual y desarrollo deficiente, afectando las consultas y la conversión."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/Cristianveas/antesporta.png",
+                        "alt": "Captura del sitio web anterior de Cristian Veas",
+                        "caption": "El sitio anterior y sus deficiencias"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Investigación, público objetivo y estrategia sobre la base existente",
+                "content": [
+                    "En lugar de desechar todo y empezar desde cero, la estrategia consistió en rescatar la infraestructura y el inventario existente en WordPress, saneándolo por completo.",
+                    "Se analizó a los usuarios que buscan equipos para eventos, sus necesidades de filtrado rápido y cómo simplificar el proceso de cotización para que el negocio pudiera cerrar ventas de forma directa y fluida."
+                ],
+                "points": [
+                    {
+                        "label": "Público objetivo",
+                        "text": "Clientes que necesitan cotizar rápido equipos de sonido, iluminación y tarimas para todo tipo de eventos."
+                    },
+                    {
+                        "label": "Auditoría interna",
+                        "text": "Limpieza profunda de la base de datos, eliminación de plugins basura y ordenamiento de las 9.000 imágenes."
+                    },
+                    {
+                        "label": "Estrategia técnica",
+                        "text": "Aprovechar WordPress como gestor y motor de contenidos, integrando tecnologías modernas como React y Vite para la interfaz."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Cristianveas/reo.JPG",
+                        "alt": "Estructura de contenidos y análisis",
+                        "caption": "Reorganización de la información"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Cristianveas/requeri.JPG",
+                        "alt": "Definición de requerimientos",
+                        "caption": "Requerimientos clave"
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Del levantamiento y diseño en Figma al desarrollo con React y Vite",
+                "content": [
+                    "El proceso abarcó el ciclo completo del servicio: investigación inicial, wireframes, diseño UX/UI en Figma asegurando coherencia de colores y tipografías, y un desarrollo complejo conectando React + Vite con el backend de WordPress.",
+                    "Asimismo, se implementó un sistema de cotización interactivo tipo carrito de compras que consolida los productos seleccionados y los transfiere directamente a un mensaje de WhatsApp estructurado."
+                ],
+                "points": [
+                    {
+                        "label": "UX / UI",
+                        "text": "Wireframes, maquetas en Figma, definición de identidad visual, jerarquía y diseño totalmente adaptado a mobile."
+                    },
+                    {
+                        "label": "Desarrollo",
+                        "text": "Implementación de React con Vite para una navegación rápida y fluida, optimizando el rendimiento frente al gran volumen de datos."
+                    },
+                    {
+                        "label": "Cotización ágil",
+                        "text": "Creación de un flujo de carrito de compras que deriva los productos seleccionados de forma limpia a WhatsApp."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Cristianveas/wifra.JPG",
+                        "alt": "Wireframes del proyecto",
+                        "caption": "Wireframes y flujos"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Cristianveas/wifra2.JPG",
+                        "alt": "Diseño en Figma",
+                        "caption": "Diseño UI en Figma"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Cristianveas/portafa2252.png",
+                        "alt": "Desarrollo técnico y código",
+                        "caption": "Desarrollo con React y Vite"
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Un ecosistema moderno, rápido y adaptado a mobile",
+                "content": [
+                    "El resultado es una plataforma completamente renovada: un buscador avanzado y preciso, filtros dinámicos eficientes para manejar los más de 2.000 productos, y una experiencia móvil impecable.",
+                    "Se dotó al sitio de una navegación compleja pero intuitiva, manteniendo la autogestión para que el equipo interno pueda seguir actualizando su inventario sin fricciones en WordPress."
+                ],
+                "points": [
+                    {
+                        "label": "Búsqueda y filtros",
+                        "text": "Buscador optimizado y filtros avanzados para encontrar iluminación, sonido y escenarios en segundos."
+                    },
+                    {
+                        "label": "Experiencia móvil",
+                        "text": "Diseño responsivo de alto rendimiento enfocado en los usuarios que navegan desde el celular."
+                    },
+                    {
+                        "label": "Funcionalidad comercial",
+                        "text": "Sistema de carrito y derivación directa a WhatsApp para agilizar la cotización de los clientes."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/Cristianveas/mokup1.JPG",
+                        "alt": "Vista principal del nuevo sitio web",
+                        "caption": "Página de inicio renovada"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Cristianveas/mokup2.JPG",
+                        "alt": "Vista en tablet del catálogo",
+                        "caption": "Catálogo y filtros"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Cristianveas/mobilecrist.png",
+                        "alt": "Versión móvil del sitio",
+                        "caption": "Experiencia Mobile"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Un sitio limpio, optimizado y listo para vender más",
+                "content": [
+                    "Se transformó por completo un sitio obsoleto y saturado en una herramienta comercial moderna, veloz y robusta, facilitando tanto la experiencia del usuario final como la gestión interna del negocio."
+                ],
+                "metrics": [
+                    {
+                        "value": "2.000+",
+                        "label": "Productos optimizados y ordenados"
+                    },
+                    {
+                        "value": "React",
+                        "label": "Arquitectura moderna de alto rendimiento"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Autoadministrable y optimizado para el equipo"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Explosed",
+        "number": "03",
+        "title": "Explosed",
+        "siteUrl": "https://www.Explosed.cl",
+        "category": [
+            "Desarrollo Web",
+            "Rediseño"
+        ],
+        "description": "Rediseño de un sitio corporativo enfocado en mejorar su estructura UX, optimizar tiempos de carga y construir una experiencia más clara, organizada y centrada en el usuario.",
+        "summary": "Rediseño corporativo para mejorar estructura UX, tiempos de carga y claridad de navegación.",
+        "cardImage": "/projects/Explosed/macexplosed.svg",
+        "cover": "/projects/Explosed/macexplosed.svg",
+        "year": "2026",
+        "projectInfo": {
+            "type": "Proyecto real",
+            "role": [
+                "Diseño UX/UI",
+                "Desarrollo web"
+            ],
+            "tools": [
+                "WordPress",
+                "Elementor",
+                "Figma",
+                "LiteSpeed",
+                "RankMath",
+                "PageSpeed Insights"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Sitio sin estructura UX definida",
+                "content": [
+                    "El problema no era solamente visual, sino la ausencia de una lógica centrada en el usuario.",
+                    "El sitio original había sido construido sin una investigación previa ni una estructura UX clara, lo que generaba problemas de jerarquía, navegación y comprensión del contenido. Aunque visualmente cumplía una función básica, existían múltiples oportunidades de mejora relacionadas con la experiencia general del usuario.",
+                    "Además, el sitio presentaba problemas de rendimiento y tiempos de carga elevados, afectando la navegación y reduciendo la fluidez de interacción, especialmente en dispositivos móviles."
+                ],
+                "points": [
+                    {
+                        "label": "Jerarquía",
+                        "text": "Jerarquía visual inconsistente entre secciones y contenido."
+                    },
+                    {
+                        "label": "Navegación",
+                        "text": "Navegación poco clara y sin prioridades definidas."
+                    },
+                    {
+                        "label": "Rendimiento",
+                        "text": "Tiempos de carga elevados y recursos sin optimizar."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/Explosed/antesexplo.png",
+                        "alt": "Captura del sitio anterior de Explosed",
+                        "caption": "El sitio anterior"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Problemas estructurales detrás de la interfaz",
+                "content": [
+                    "El análisis permitió detectar que las principales fallas estaban en la estructura y no únicamente en lo visual.",
+                    "A través de una revisión centrada en experiencia de usuario, se detectó una falta de organización en la arquitectura del contenido y una distribución visual que dificultaba la exploración natural del sitio.",
+                    "También se identificaron elementos redundantes, inconsistencias de espaciado, ausencia de prioridades visuales y problemas técnicos que impactaban directamente el rendimiento y la percepción de profesionalismo del sitio."
+                ],
+                "points": [
+                    {
+                        "label": "Arquitectura",
+                        "text": "Falta de organización en la estructura y distribución del contenido."
+                    },
+                    {
+                        "label": "Interfaz",
+                        "text": "Elementos redundantes e inconsistencias de espaciado y prioridades visuales."
+                    },
+                    {
+                        "label": "Técnico",
+                        "text": "Problemas que impactaban directamente el rendimiento y la percepción profesional."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Explosed/antes2ex.png",
+                        "alt": "Estructura de contenidos",
+                        "caption": "Análisis de contenidos"
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Reconstrucción desde la experiencia de usuario",
+                "content": [
+                    "El rediseño se abordó desde la estructura, rendimiento y claridad de navegación.",
+                    "Se realizó un proceso de análisis enfocado en detectar problemas de arquitectura, navegación, jerarquía visual y rendimiento general del sitio. A partir de esto, se reorganizó el contenido para construir una experiencia más clara y coherente.",
+                    "Además de mejorar la interfaz, se optimizaron recursos, imágenes y configuraciones técnicas utilizando herramientas como LiteSpeed, RankMath y PageSpeed Insights, permitiendo mejorar significativamente el rendimiento y la estabilidad general del sitio."
+                ],
+                "points": [
+                    {
+                        "label": "Reorganización",
+                        "text": "Estructuración de contenidos para una experiencia más clara y coherente."
+                    },
+                    {
+                        "label": "Optimización",
+                        "text": "Uso de herramientas especializadas para mejorar tiempos de respuesta."
+                    },
+                    {
+                        "label": "SEO y Rendimiento",
+                        "text": "Configuraciones técnicas avanzadas para estabilidad y velocidad."
+                    }
+                ],
+                "media": [
+                    
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Estructura clara y experiencia optimizada",
+                "content": [
+                    "Cada ajuste fue realizado para mejorar comprensión, navegación y rendimiento.",
+                    "Se rediseñó la estructura visual y funcional del sitio priorizando claridad, orden y accesibilidad del contenido. La navegación fue reorganizada para facilitar la exploración y generar una experiencia más intuitiva.",
+                    "También se optimizó el rendimiento general mediante compresión de recursos, mejoras de carga y configuración técnica orientada a reducir tiempos de espera y mejorar estabilidad en distintos dispositivos.",
+                    "El resultado es una experiencia corporativa más moderna, eficiente y alineada con estándares actuales de experiencia digital."
+                ],
+                "points": [
+                    {
+                        "label": "Visual y Funcional",
+                        "text": "Estructura priorizando claridad, orden y accesibilidad."
+                    },
+                    {
+                        "label": "Navegación",
+                        "text": "Recorridos reorganizados para hacer la exploración más intuitiva."
+                    },
+                    {
+                        "label": "Eficiencia",
+                        "text": "Reducción de tiempos de espera y mayor estabilidad multidispositivo."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/Explosed/buscador.JPG",
+                        "alt": "Vista de la nueva interfaz",
+                        "caption": "Resultados de busquedas"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Explosed/explo2.png",
+                        "alt": "Vista en tablet",
+                        "caption": "Versión Tablet"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Explosed/explo3.png",
+                        "alt": "Versión móvil",
+                        "caption": "Versión Mobile"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Experiencia más clara, rápida y estructurada",
+                "content": [
+                    "El rediseño permitió transformar un sitio construido sin una estructura UX definida en una experiencia más organizada, intuitiva y eficiente. La mejora en jerarquía, navegación y rendimiento fortalece tanto la usabilidad como la percepción profesional de la empresa en entornos digitales."
+                ],
+                "metrics": [
+                    {
+                        "value": "UX Optimizada",
+                        "label": "Estructura centrada en el usuario"
+                    },
+                    {
+                        "value": "Velocidad optima",
+                        "label": "Tiempos de carga reducidos con LiteSpeed"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Modernización corporativa y digital"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "desaloon",
+        "number": "04",
+        "title": "De saloon",
+        "siteUrl": "https://benjatriple7.github.io/Redise-oDeSaloon/",
+        "category": [
+            "Desarrollo Web",
+            "Rediseño"
+        ],
+        "description": "Rediseño del sitio oficial de la banda enfocado en modernizar su interfaz, mejorar la adaptación móvil y potenciar la promoción del tour.",
+        "summary": "Rediseño del sitio oficial de De Saloon para modernizar interfaz, optimizar móvil y potenciar el tour.",
+        "cardImage": "/projects/Desaloon/macdesalon.svg",
+        "cover": "/projects/Desaloon/macdesalon.svg",
+        "year": "2024",
+        "projectInfo": {
+            "type": "Proyecto personal",
+            "role": [
+                "Diseñador UX/UI"
+            ],
+            "tools": [
+                "Figma"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Sitio genérico y sin intención de diseño",
+                "content": [
+                    "El problema no era el contenido, sino la falta de criterio en su implementación.",
+                    "El sitio original presentaba una estructura básica y poco trabajada, con una interfaz que carecía de jerarquía visual y consistencia. Además, tenía problemas de adaptación en dispositivos móviles y una composición que transmitía poca intención de diseño, generando una experiencia poco atractiva para el usuario.",
+                    "Esto provocaba desinterés y abandono, afectando directamente la percepción de profesionalismo de la banda y el impacto de su promoción."
+                ],
+                "points": [
+                    {
+                        "label": "Jerarquía",
+                        "text": "Sin jerarquía visual entre título, imagen y contenido."
+                    },
+                    {
+                        "label": "Adaptabilidad",
+                        "text": "Layout roto en viewports menores a 768px."
+                    },
+                    {
+                        "label": "Contenido clave",
+                        "text": "Fechas del tour enterradas fuera del fold."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/Desaloon/antesdesa.png",
+                        "alt": "Captura del sitio anterior de De Saloon",
+                        "caption": "El sitio anterior"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Foco visual mal distribuido",
+                "content": [
+                    "Elementos mal jerarquizados reducían el impacto del contenido principal.",
+                    "La composición del sitio estaba dominada por una imagen que superaba el alto de la pantalla, desplazando el contenido relevante —como las fechas del tour— fuera del foco inicial del usuario.",
+                    "Además, se detectaron inconsistencias visuales y una falta de sistema en el uso de tipografías, tamaños y espaciados, generando ruido visual y una lectura poco fluida."
+                ],
+                "points": [
+                    {
+                        "label": "Composición",
+                        "text": "Imagen sobredimensionada que ocultaba el contenido importante."
+                    },
+                    {
+                        "label": "Sistema visual",
+                        "text": "Inconsistencias en tipografías, tamaños y espaciados."
+                    },
+                    {
+                        "label": "Legibilidad",
+                        "text": "Ruido visual y lectura poco fluida para los visitantes."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Desaloon/contedesa2.JPG",
+                        "alt": "Análisis de distribución",
+                        "caption": "Análisis de elementos"
+                    }
+
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Replanteamiento estructural y visual",
+                "content": [
+                    "Se abordó el rediseño desde la arquitectura de la información hasta el detalle visual.",
+                    "Se desarrolló un proceso de análisis que incluyó benchmarking de sitios de bandas, definición de jerarquía de contenido y exploración visual mediante wireframes y referencias gráficas.",
+                    "Se eliminaron elementos que no aportaban valor —como imágenes redundantes y títulos sobredimensionados— y se reorganizó el contenido para priorizar las fechas del tour. Al mismo tiempo, se mantuvieron componentes clave del sitio original, integrándolos dentro de una estructura más coherente y dinámica."
+                ],
+                "points": [
+                    {
+                        "label": "Benchmarking",
+                        "text": "Análisis de referentes de sitios de música y bandas."
+                    },
+                    {
+                        "label": "Wireframes",
+                        "text": "Definición de nueva jerarquía y distribución en Figma."
+                    },
+                    {
+                        "label": "Optimización",
+                        "text": "Depuración de elementos redundantes y enfoque en el tour."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Desaloon/wifradesa.JPG",
+                        "alt": "Wireframes del proyecto De Saloon",
+                        "caption": "Wireframes"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Desaloon/wifradesa2.JPG",
+                        "alt": "Diseño visual en Figma",
+                        "caption": "Diseño UI en Figma"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Desaloon/mockupdesa.JPG",
+                        "alt": "Estructura final planteada",
+                        "caption": "Estructura de componentes"
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Interfaz dinámica y orientada al contenido",
+                "content": [
+                    "Cada decisión responde a una intención clara dentro de la experiencia.",
+                    "Se rediseñó la arquitectura del sitio priorizando las fechas del tour como elemento principal, facilitando su acceso y lectura. Se incorporó una galería conectada al contenido visual de la banda, reforzando su identidad y presencia digital.",
+                    "Se añadió un footer estructurado con enlaces a redes sociales y un tratamiento visual coherente, reemplazando una solución básica del sitio original. Además, se integró un efecto visual sutil en el fondo para aportar dinamismo sin interferir en la lectura.",
+                    "El resultado es una interfaz más moderna, adaptable y alineada con el contexto actual de consumo digital."
+                ],
+                "points": [
+                    {
+                        "label": "Fechas de Tour",
+                        "text": "Ubicación principal para facilitar el acceso y la conversión."
+                    },
+                    {
+                        "label": "Identidad visual",
+                        "text": "Galería integrada, footer estructurado y efectos sutiles de fondo."
+                    },
+                    {
+                        "label": "Adaptabilidad",
+                        "text": "Experiencia fluida y moderna en cualquier dispositivo."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/Desaloon/ahoradesa.png",
+                        "alt": "Vista principal del rediseño",
+                        "caption": "Página principal"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Desaloon/ahoradesa2.png",
+                        "alt": "Vista en tablet",
+                        "caption": "Versión Tablet"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Desaloon/ahoradesa3.png",
+                        "alt": "Versión móvil",
+                        "caption": "Versión Mobile"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Experiencia más atractiva y profesional",
+                "content": [
+                    "El rediseño transforma un sitio básico en una experiencia visual coherente, donde el contenido principal se presenta con claridad y jerarquía. Esto permite una navegación más intuitiva, aumenta el tiempo de permanencia y mejora la percepción de profesionalismo de la banda."
+                ],
+                "metrics": [
+                    {
+                        "value": "UX Moderna",
+                        "label": "Jerarquía centrada en el tour y la banda"
+                    },
+                    {
+                        "value": "Mobile-First",
+                        "label": "Adaptabilidad total en pantallas móviles"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Coherencia visual y de marca"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Arthum",
+        "number": "05",
+        "title": "Arthum",
+        "siteUrl": "https://www.Arthum.cl",
+        "category": [
+            "Diseño UX/UI",
+            "Front-end",
+            "Rediseño"
+        ],
+        "description": "Modernización completa de un sitio web de arte originalmente desarrollado en los años 2000, enfocado en actualizar su lenguaje visual, mejorar la exploración de obras y adaptar la experiencia a estándares actuales.",
+        "summary": "Modernización de sitio de arte de los años 2000 para transformar la navegación en una experiencia de galería contemplativa.",
+        "cardImage": "/projects/Arthum/macarthum.svg",
+        "cover": "/projects/Arthum/macarthum.svg",
+        "year": "2024",
+        "projectInfo": {
+            "type": "Proyecto académico",
+            "role": [
+                "Diseño UX/UI",
+                "Desarrollo Front-end"
+            ],
+            "tools": [
+                "Figma",
+                "SCSS",
+                "Bootstrap"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Sitio desactualizado y centrado en elementos incorrectos",
+                "content": [
+                    "El diseño respondía a estándares antiguos, perdiendo foco en las obras.",
+                    "El sitio original presentaba una interfaz propia de los años 2000, con una estructura rígida, tipografías sobredimensionadas y una jerarquía visual mal definida.",
+                    "Elementos como precios y textos tenían mayor protagonismo que las propias obras, afectando su percepción y generando una experiencia poco atractiva."
+                ],
+                "points": [
+                    {
+                        "label": "Jerarquía",
+                        "text": "Jerarquía visual enfocada en precios y texto en lugar de las obras."
+                    },
+                    {
+                        "label": "Estética",
+                        "text": "Estética desactualizada, rígida y propia de la Web 1.0."
+                    },
+                    {
+                        "label": "Experiencia",
+                        "text": "Experiencia poco inmersiva para explorar y apreciar el contenido artístico."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/Arthum/arthumantes.jpg",
+                        "alt": "Captura del sitio original de Arthum",
+                        "caption": "El sitio anterior"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Competencia visual y falta de intención estética",
+                "content": [
+                    "La interfaz no respetaba el rol protagónico del contenido visual.",
+                    "Existía una competencia constante entre tipografías, precios e imágenes, donde los elementos funcionales dominaban sobre el contenido artístico.",
+                    "La falta de espaciado, contraste adecuado y consistencia visual generaba una lectura fragmentada y poco fluida."
+                ],
+                "points": [
+                    {
+                        "label": "Protagonismo",
+                        "text": "Competencia entre elementos funcionales y el contenido artístico."
+                    },
+                    {
+                        "label": "Lectura",
+                        "text": "Falta de espaciado y contraste que fragmentaba la navegación."
+                    },
+                    {
+                        "label": "Inconsistencia",
+                        "text": "Ausencia de un sistema visual coherente enfocado en la exhibición."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Arthum/antes2art.png",
+                        "alt": "Análisis de elementos del sitio",
+                        "caption": "Análisis de interfaz"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Arthum/antes3art.png",
+                        "alt": "Análisis de jerarquías",
+                        "caption": "Jerarquía de elementos"
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Redefinición de la experiencia desde la base",
+                "content": [
+                    "Se abordó el proyecto como una reconstrucción completa.",
+                    "Se realizó investigación centrada en el usuario, desarrollo de wireframes y definición de la arquitectura de navegación.",
+                    "Se eliminaron elementos innecesarios del diseño original y se reconstruyó la experiencia enfocándola en la contemplación del contenido."
+                ],
+                "points": [
+                    {
+                        "label": "Investigación",
+                        "text": "Investigación de usuarios y benchmarking de galerías de arte digital."
+                    },
+                    {
+                        "label": "Wireframes",
+                        "text": "Definición de nueva arquitectura y flujo en Figma."
+                    },
+                    {
+                        "label": "Front-end",
+                        "text": "Maquetación responsive utilizando SCSS y Bootstrap."
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Interfaz enfocada en la contemplación",
+                "content": [
+                    "El diseño se construye alrededor del contenido.",
+                    "Se reorganizó la arquitectura priorizando las obras como elemento central, utilizando un fondo neutro y eliminando distracciones.",
+                    "Se structured la navegación en categorías claras y se redujo el protagonismo de elementos secundarios como precios."
+                ],
+                "points": [
+                    {
+                        "label": "Minimalismo",
+                        "text": "Fondos neutros y limpieza visual para destacar las obras."
+                    },
+                    {
+                        "label": "Categorización",
+                        "text": "Estructura de navegación simplificada por categorías artísticas."
+                    },
+                    {
+                        "label": "Equilibrio",
+                        "text": "Reducción del protagonismo de precios para priorizar la contemplación."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/Arthum/artdesp1.png",
+                        "alt": "Vista principal del nuevo sitio de Arthum",
+                        "caption": "Página principal"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Experiencia centrada en el contenido artístico",
+                "content": [
+                    "El rediseño transforma un sitio obsoleto en una experiencia visual limpia y enfocada, donde las obras toman el protagonismo. La nueva estructura permite una exploración más fluida, mejora la lectura del contenido y acerca la experiencia digital a la de una galería contemporánea."
+                ],
+                "metrics": [
+                    {
+                        "value": "Galería Digital",
+                        "label": "Enfoque 100% contemplativo e inmersivo"
+                    },
+                    {
+                        "value": "Responsive",
+                        "label": "Adaptabilidad total con SCSS y Bootstrap"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Rediseño de interfaz y arquitectura UX"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Linkin-Park",
+        "number": "06",
+        "title": "Linkin Park",
+        "siteUrl": "https://www.LinkinPark.cl",
+        "category": [
+            "Diseño UX/UI",
+            "Desarrollo Web",
+            "E-commerce"
+        ],
+        "description": "Diseño y desarrollo de un sitio web completo para la banda Linkin Park, enfocado en crear una experiencia digital más cercana para los fans, integrando contenido informativo, discografía, noticias y comercio en una sola plataforma.",
+        "summary": "Plataforma integral e-commerce y de contenidos para Linkin Park enfocada en enriquecer la experiencia y conexión con los fans.",
+        "cardImage": "/projects/Linkinpark/maclinkin.svg",
+        "cover": "/projects/Linkinpark/maclinkin.svg",
+        "year": "2024",
+        "projectInfo": {
+            "type": "Proyecto académico",
+            "role": [
+                "Diseño UX/UI",
+                "Desarrollo Web"
+            ],
+            "tools": [
+                "WordPress",
+                "WooCommerce",
+                "PHP",
+                "JavaScript",
+                "Figma"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Sitios de bandas centrados solo en promoción",
+                "content": [
+                    "La mayoría de los sitios priorizan eventos, dejando de lado la experiencia del fan.",
+                    "A partir del análisis de sitios de bandas como Twenty One Pilots, Los Bunkers y Limp Bizkit, se identificó un patrón común: plataformas enfocadas casi exclusivamente en la promoción de shows, con poca profundidad en contenido informativo o interacción.",
+                    "Esto limitaba la experiencia del usuario, especialmente para fans que buscan explorar la historia, discografía y contenido relacionado con la banda en un solo lugar."
+                ],
+                "points": [
+                    {
+                        "label": "Navegación",
+                        "text": "Navegación enfocada solo en eventos y fechas."
+                    },
+                    {
+                        "label": "Integración",
+                        "text": "Falta de integración entre contenido y experiencia."
+                    },
+                    {
+                        "label": "Interacción",
+                        "text": "Escasa interacción y exploración para el usuario."
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Experiencia fragmentada y poco inmersiva",
+                "content": [
+                    "El contenido existe, pero no está integrado en una experiencia completa.",
+                    "Los sitios analizados presentaban una estructura funcional pero limitada, donde la información se encontraba dispersa o en segundo plano. La navegación priorizaba eventos por sobre otros contenidos relevantes, generando una experiencia poco equilibrada.",
+                    "Además, la falta de elementos interactivos y narrativa visual reducía el nivel de conexión emocional con el usuario."
+                ],
+                "points": [
+                    {
+                        "label": "Dispersión",
+                        "text": "Información fragmentada y secundaria."
+                    },
+                    {
+                        "label": "Prioridades",
+                        "text": "Priorización excesiva de la venta de entradas sobre la narrativa de la banda."
+                    },
+                    {
+                        "label": "Conexión",
+                        "text": "Ausencia de elementos interactivos y emocionales para el fan."
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Construcción de una experiencia centrada en el fan",
+                "content": [
+                    "Se buscó integrar contenido, interacción y estética en un solo sistema.",
+                    "El proceso incluyó investigación de referentes, definición de arquitectura del sitio y diseño en Figma. Se tomó como base visual la estética del álbum “Minutes to Midnight”, utilizando su paleta de colores como guía conceptual.",
+                    "Se diseñó una estructura completa que abarca múltiples secciones: inicio, banda, discografía, shows, blog y tienda, permitiendo una experiencia más rica y profunda para el usuario."
+                ],
+                "points": [
+                    {
+                        "label": "Estética conceptual",
+                        "text": "Inspirada en la paleta y universo de 'Minutes to Midnight'."
+                    },
+                    {
+                        "label": "Múltiples secciones",
+                        "text": "Inicio, miembros, discografía, eventos, blog y e-commerce."
+                    },
+                    {
+                        "label": "Figma y WordPress",
+                        "text": "Prototipado en Figma y desarrollo custom en WordPress con PHP y JS."
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Plataforma integral con foco en contenido e interacción",
+                "content": [
+                    "El sitio se transforma en un punto central para la experiencia del fan.",
+                    "Se desarrolló un sitio completo utilizando WordPress y WooCommerce, incorporando funcionalidades como tienda, blog de noticias y páginas dedicadas a la discografía y miembros de la banda.",
+                    "Se añadieron elementos interactivos como modales, eventos dinámicos y secciones con contenido adicional —como datos curiosos— para enriquecer la exploración.",
+                    "La música se presenta a través de una sección dedicada a los álbumes, permitiendo acceder a información detallada y reforzando el valor del contenido."
+                ],
+                "points": [
+                    {
+                        "label": "WooCommerce",
+                        "text": "Tienda oficial integrada para la venta de merchandising."
+                    },
+                    {
+                        "label": "Interactividad",
+                        "text": "Modales, eventos dinámicos y secciones con datos curiosos."
+                    },
+                    {
+                        "label": "Discografía",
+                        "text": "Sección interactiva dedicada a explorar la historia musical de la banda."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/Linkinpark/linkin1.png",
+                        "alt": "Vista principal del sitio de Linkin Park",
+                        "caption": "Página principal"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Linkinpark/linkin2.png",
+                        "alt": "Sección de tienda en tablet",
+                        "caption": "Tienda en Tablet"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Linkinpark/linkin3.png",
+                        "alt": "Experiencia móvil para fans",
+                        "caption": "Experiencia Mobile"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Experiencia más completa y conectada con el usuario",
+                "content": [
+                    "El resultado es una plataforma que va más allá de la promoción de eventos, ofreciendo una experiencia más inmersiva e informativa. El sitio permite al usuario explorar, interactuar y conectar con la banda desde múltiples dimensiones, generando una mayor cercanía y engagement."
+                ],
+                "metrics": [
+                    {
+                        "value": "Plataforma 360°",
+                        "label": "Integración de contenido, tienda e historia"
+                    },
+                    {
+                        "value": "WooCommerce",
+                        "label": "Sistema e-commerce de merchandising"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Enfocado en la experiencia del fan"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Mineduc",
+        "number": "07",
+        "title": "Mineduc",
+        "siteUrl": "https://www.Mineduc.cl",
+        "category": [
+            "Diseño UX/UI",
+            "Accesibilidad Web",
+            "Rediseño"
+        ],
+        "description": "Rediseño del sitio de Mineduc enfocado en accesibilidad, aplicando los estándares WCAG para mejorar la legibilidad, navegación y comprensión del contenido en distintos contextos de uso.",
+        "summary": "Rediseño de la página de inicio de Mineduc enfocado en estándares de accesibilidad WCAG y navegación inclusiva.",
+        "cardImage": "/projects/Mineduc/macmineduc.svg",
+        "cover": "/projects/Mineduc/macmineduc.svg",
+        "year": "2025",
+        "projectInfo": {
+            "type": "Proyecto académico",
+            "role": [
+                "Diseñador UX/UI"
+            ],
+            "tools": [
+                "Figma"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Barreras de acceso al contenido",
+                "content": [
+                    "El sitio no fallaba visualmente, pero sí en su capacidad de ser utilizado.",
+                    "El home del sitio presentaba múltiples problemas de accesibilidad que dificultaban la lectura y navegación, especialmente para usuarios con baja visión o que utilizan tecnologías asistidas. Entre los problemas detectados se identificó bajo contraste, uso de transparencias que afectaban la legibilidad, ausencia de textos alternativos y una estructura semántica inconsistente.",
+                    "Además, la interacción se veía limitada por botones de tamaño reducido, enlaces poco visibles y ausencia de atributos que permitieran una navegación clara mediante teclado o lectores de pantalla."
+                ],
+                "points": [
+                    {
+                        "label": "Contraste",
+                        "text": "Contraste insuficiente para una lectura accesible según normas WCAG."
+                    },
+                    {
+                        "label": "Estructura",
+                        "text": "Jerarquía semántica inconsistente que confundía el escaneo visual."
+                    },
+                    {
+                        "label": "Navegación",
+                        "text": "Navegación limitada para personas que usan tecnologías asistidas o teclado."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/Mineduc/mine1.png",
+                        "alt": "Captura de la versión anterior del sitio de Mineduc",
+                        "caption": "Página de inicio anterior"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Evaluación bajo estándares de accesibilidad",
+                "content": [
+                    "El análisis se centró en cómo el sitio respondía a los principios de accesibilidad.",
+                    "Se evaluó el sitio utilizando los criterios establecidos por el W3C, considerando los principios de Perceptible, Operable, Comprensible y Robusto. A partir de esto, se identificaron fallas en la jerarquía de contenidos, falta de landmarks, contrastes insuficientes y ausencia de soporte para tecnologías asistidas.",
+                    "Estas deficiencias no solo afectan la experiencia de usuarios con necesidades específicas, sino que también impactan la claridad general del contenido y dificultan su comprensión."
+                ],
+                "points": [
+                    {
+                        "label": "Criterios W3C",
+                        "text": "Evaluación basada en los principios Perceptible, Operable, Comprensible y Robusto."
+                    },
+                    {
+                        "label": "Landmarks",
+                        "text": "Falta de regiones y etiquetas semánticas para lectores de pantalla."
+                    },
+                    {
+                        "label": "Claridad global",
+                        "text": "Las fallas afectaban tanto a usuarios con necesidades específicas como al público general."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Mineduc/mine2.png",
+                        "alt": "Análisis de accesibilidad y contrastes",
+                        "caption": "Auditoría de accesibilidad"
+                    },
+                    {
+                        "type": "screen",
+                        "size": "half",
+                        "src": "/projects/Mineduc/mine3.png",
+                        "alt": "Definición de problemas de legibilidad",
+                        "caption": "Definición de criterios WCAG"
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Definición de criterios WCAG",
+                "content": [
+                    "Se establecieron parámetros concretos para guiar el rediseño.",
+                    "A partir del análisis, se definieron criterios basados en WCAG 2.1, priorizando la legibilidad, la correcta estructura semántica y la navegación asistida.",
+                    "Se establecieron indicadores clave como contraste mínimo 4.5:1, jerarquía adecuada de encabezados, uso de textos alternativos, implementación de landmarks y estados de foco visibles. Estos lineamientos permitieron abordar el rediseño de forma estructurada, asegurando coherencia entre diseño visual y funcionalidad accesible."
+                ],
+                "points": [
+                    {
+                        "label": "Contraste 4.5:1",
+                        "text": "Garantía de legibilidad en todos los componentes de texto e interfaz."
+                    },
+                    {
+                        "label": "Semántica y Foco",
+                        "text": "Encabezados ordenados, estados de foco visibles y atributos ARIA."
+                    },
+                    {
+                        "label": "Landmarks y Alt",
+                        "text": "Textos alternativos en imágenes y regiones claramente delimitadas."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "third",
+                        "src": "/projects/Mineduc/mine7.png",
+                        "alt": "Estructura accesible y wireframes",
+                        "caption": "Wireframes accesibles"
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Rediseño centrado en accesibilidad",
+                "content": [
+                    "Cada ajuste responde a un criterio funcional, no solo visual.",
+                    "Se rediseñó la interfaz corrigiendo los problemas de contraste y eliminando transparencias que afectaban la lectura.",
+                    "Se reorganizó la estructura del contenido mediante una jerarquía semántica clara, incorporando encabezados adecuados y landmarks que facilitan la navegación mediante tecnologías asistidas.",
+                    "Además, se añadieron textos alternativos en todas las imágenes, se ampliaron los elementos interactivos y se implementaron atributos ARIA para reforzar la comprensión del contenido. La tipografía y los espacios fueron ajustados para mejorar la legibilidad y el escaneo visual, generando una experiencia más clara y accesible."
+                ],
+                "points": [
+                    {
+                        "label": "Legibilidad",
+                        "text": "Eliminación de transparencias, mayor espaciado y tipografía clara."
+                    },
+                    {
+                        "label": "Interactividad",
+                        "text": "Botones y enlaces de mayor tamaño con estados de interacción bien definidos."
+                    },
+                    {
+                        "label": "Inclusión",
+                        "text": "Soporte integral para navegación mediante teclado y lectores de pantalla."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "mockup",
+                        "size": "full",
+                        "src": "/projects/Mineduc/mine5.png",
+                        "alt": "Vista principal del sitio rediseñado de Mineduc",
+                        "caption": "Página de inicio accesible"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Mineduc/mine6.png",
+                        "alt": "Vista en tablet del rediseño",
+                        "caption": "Versión Tablet"
+                    },
+                    {
+                        "type": "mockup",
+                        "size": "half",
+                        "src": "/projects/Mineduc/mine4.png",
+                        "alt": "Vista en dispositivo móvil",
+                        "caption": "Versión Mobile"
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Diseño inclusivo y accesible",
+                "content": [
+                    "El rediseño permite una navegación más clara, mejora la legibilidad del contenido y facilita la interacción para usuarios con distintas capacidades. La estructura del sitio ahora responde a estándares de accesibilidad, permitiendo una experiencia más inclusiva, coherente y comprensible."
+                ],
+                "metrics": [
+                    {
+                        "value": "WCAG 2.1",
+                        "label": "Cumplimiento de estándares de accesibilidad"
+                    },
+                    {
+                        "value": "AA Ratio",
+                        "label": "Contraste mínimo de 4.5:1 garantizado"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Navegación asistida y lectura inclusiva"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Carsjdm",
+        "number": "08",
+        "title": "Carsjdm",
+        "siteUrl": "https://www.Carsjdm.cl",
+        "category": [
+            "Diseño UX/UI",
+            "Desarrollo Full Stack",
+            "React"
+        ],
+        "description": "Desarrollo de una aplicación web enfocada en la visualización y cotización de volantes automotrices, implementando catálogo dinámico, carrito persistente en LocalStorage y cotización automática vía WhatsApp.",
+        "summary": "Aplicación web en React y Node.js para catálogo de volantes automotrices con carrito en LocalStorage y cotización por WhatsApp.",
+        "cardImage": "/projects/Carsjdm/maccars.svg",
+        "cover": "/projects/Carsjdm/maccars.svg",
+        "year": "2026",
+        "projectInfo": {
+            "type": "Proyecto personal",
+            "role": [
+                "Diseño UX/UI",
+                "Desarrollo Full Stack"
+            ],
+            "tools": [
+                "React",
+                "Vite",
+                "Node.js",
+                "JavaScript"
+            ]
+        },
+        "steps": [
+            {
+                "id": "problema",
+                "label": "Problema",
+                "title": "Centralizar la consulta de productos y optimizar el proceso de cotización",
+                "content": [
+                    "El negocio necesitaba mostrar su catálogo de forma clara y recibir solicitudes más precisas de sus clientes.",
+                    "El proyecto surgió a partir de una necesidad real de un emprendimiento dedicado a la venta de volantes automotrices. El proceso de atención dependía principalmente de consultas por mensajería, donde los clientes preguntaban repetidamente por disponibilidad o modelos específicos, dificultando la gestión de solicitudes y generando conversaciones poco eficientes.",
+                    "Al mismo tiempo, el proyecto representó una oportunidad para aprender React, Node.js y consumo de APIs mediante el desarrollo de una aplicación funcional, enfocada en resolver un problema real."
+                ],
+                "points": [
+                    {
+                        "label": "Consultas",
+                        "text": "Consultas repetitivas sobre modelos y disponibilidad de volantes."
+                    },
+                    {
+                        "label": "Catálogo",
+                        "text": "Ausencia de un catálogo digital centralizado y ordenado."
+                    },
+                    {
+                        "label": "Desarrollo",
+                        "text": "Necesidad de aplicar tecnologías modernas como React y Node.js en un caso real."
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "screen",
+                        "size": "full",
+                        "src": "/projects/Carsjdm/cardjshero.png",
+                        "alt": "Captura del estado inicial del catálogo Carsjdm",
+                        "caption": "El problema de atención inicial"
+                    }
+                ]
+            },
+            {
+                "id": "analisis",
+                "label": "Análisis",
+                "title": "Simplificar la cotización sin perder información relevante",
+                "content": [
+                    "El desafío era conectar la exploración del catálogo con una consulta más eficiente para el negocio.",
+                    "A partir del análisis de la forma en que se realizaban las consultas, se identificó que gran parte del tiempo se invertía en recopilar información básica sobre los productos que interesaban a cada cliente.",
+                    "Desde el punto de vista técnico, el proyecto requería una navegación fluida entre catálogo, detalle de productos y carrito, manteniendo la información del usuario incluso después de recargar la página mediante LocalStorage."
+                ],
+                "points": [
+                    {
+                        "label": "Información",
+                        "text": "Se perdía demasiado tiempo recopilando datos básicos por mensajería."
+                    },
+                    {
+                        "label": "Navegación",
+                        "text": "Requería un flujo continuo entre catálogo, producto y carrito de cotización."
+                    },
+                    {
+                        "label": "Persistencia",
+                        "text": "Uso de LocalStorage para guardar la selección ante recargas de página."
+                    }
+                ]
+            },
+            {
+                "id": "proceso",
+                "label": "Proceso",
+                "title": "Desarrollo de una aplicación orientada a la cotización",
+                "content": [
+                    "El proyecto combinó objetivos de aprendizaje con una necesidad real de negocio.",
+                    "El desarrollo comenzó definiendo el flujo principal del usuario: explorar el catálogo, revisar el detalle de los productos, agregarlos a un carrito y finalmente generar una solicitud de cotización a través de WhatsApp.",
+                    "Durante el proceso se implementaron componentes reutilizables en React, navegación con React Router y persistencia con LocalStorage. Además, los datos se cargaron dinámicamente desde archivos JSON para mantener un backend liviano y escalable con Node.js."
+                ],
+                "points": [
+                    {
+                        "label": "Componentes",
+                        "text": "Estructura modular en React con rutas dinámicas mediante React Router."
+                    },
+                    {
+                        "label": "Datos dinámicos",
+                        "text": "Carga de productos desde archivos JSON para fácil administración."
+                    },
+                    {
+                        "label": "Integración",
+                        "text": "Generación automática de mensajes formateados hacia WhatsApp API."
+                    }
+                ]
+            },
+            {
+                "id": "solucion",
+                "label": "Solución",
+                "title": "Catálogo digital con cotización directa mediante WhatsApp",
+                "content": [
+                    "La plataforma simplifica la búsqueda de productos y mejora la calidad de las consultas recibidas.",
+                    "Se desarrolló una aplicación web utilizando React, Vite y Node.js, diseñada para presentar de forma clara el catálogo de volantes automotrices y facilitar el proceso de cotización.",
+                    "El sistema recopila los productos seleccionados en el carrito junto con los datos de contacto ingresados y genera automáticamente un mensaje estructurado para WhatsApp, reduciendo conversaciones innecesarias y acelerando las ventas."
+                ],
+                "points": [
+                    {
+                        "label": "Exploración",
+                        "text": "Catálogo dinámico e intuitivo enfocado en volantes automotrices."
+                    },
+                    {
+                        "label": "Carrito local",
+                        "text": "Guardado automático de productos sin requerir login gracias a LocalStorage."
+                    },
+                    {
+                        "label": "WhatsApp API",
+                        "text": "Generación instantánea del mensaje de cotización detallado."
+                    }
+                ]
+            },
+            {
+                "id": "resultado",
+                "label": "Resultado",
+                "title": "Solución funcional para el negocio y experiencia completa",
+                "content": [
+                    "El proyecto permitió desarrollar una aplicación capaz de centralizar el catálogo de productos y facilitar el proceso de cotización mediante WhatsApp. Los usuarios pueden explorar los volantes disponibles, guardar productos de interés y enviar solicitudes más precisas."
+                ],
+                "metrics": [
+                    {
+                        "value": "React + Vite",
+                        "label": "Arquitectura Spa rápida y moderna"
+                    },
+                    {
+                        "value": "LocalStorage",
+                        "label": "Persistencia de estado para el carrito"
+                    },
+                    {
+                        "value": "100%",
+                        "label": "Cotizaciones estructuradas vía WhatsApp"
+                    }
+                ]
+            }
+        ]
+    }
+]

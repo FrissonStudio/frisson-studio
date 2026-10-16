@@ -1,0 +1,369 @@
+$bg: #1a1a1a;
+$title: #d4c5a9;
+$text: #ccc2af;
+$gold: #c8a97e;
+
+$sage: #cbd3b8;
+$lilac: #d8c9e0;
+$sand: #e2cfb4;
+$cream: #ede6db;
+$ink: #2f2b2a;
+
+$font-serif: 'Fraunces', Georgia, serif;
+$font-sans: 'Figtree', system-ui, sans-serif;
+
+$bp-tablet: 860px;
+
+@mixin serif($weight: 300, $opsz: 144) {
+    font-family: $font-serif;
+    font-weight: $weight;
+    font-variation-settings: 'SOFT' 100,
+    'opsz'#{$opsz};
+}
+
+.contacto {
+    background: $bg;
+    color: $text;
+    font-family: $font-sans;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    &__wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: clamp(56px, 10vw, 128px) clamp(20px, 5vw, 48px);
+
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 48px clamp(32px, 6vw, 88px);
+        align-items: center;
+        padding-bottom: 0px
+       
+    }
+
+    // ---------- Columna izquierda ----------
+    &__title {
+        @include serif(300, 144);
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1.06;
+        letter-spacing: -0.02em;
+        color: $title;
+        margin: 0;
+        max-width: 14ch;
+    }
+
+    &__text {
+        max-width: 38ch;
+        margin: 28px 0 40px;
+        color: $text;
+        font-size: 1.05rem;
+    }
+
+    // Botón sin relleno
+    &__btn {
+        display: inline-block;
+        padding: 14px 32px;
+        border: 1px solid $title;
+        border-radius: 999px;
+        background: transparent;
+        color: $title;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.4s, color 0.4s;
+
+        &:hover,
+        &:focus-visible {
+            background: $title;
+            color: $bg;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $title;
+            outline-offset: 4px;
+        }
+    }
+
+    // ---------- Antes y después ----------
+    &__compare {
+        --pos: 50%;
+
+        position: relative;
+        container-type: inline-size; // las maquetas escalan con su ancho
+        aspect-ratio: 4 / 3.2;
+        border-radius: 32px;
+        overflow: hidden;
+        border: 1px solid rgba($title, 0.18);
+        user-select: none;
+        touch-action: pan-y; // el scroll vertical sigue funcionando
+    }
+
+    &__layer {
+        position: absolute;
+        inset: 0;
+
+        // "Después" se revela desde la derecha del divisor
+        &--after {
+            clip-path: inset(0 0 0 var(--pos));
+        }
+    }
+
+    &__tag {
+        position: absolute;
+        top: 16px;
+        padding: 4px 14px;
+        border-radius: 999px;
+        background: rgba($bg, 0.78);
+        color: $title;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        pointer-events: none;
+
+        &--before {
+            left: 16px;
+        }
+
+        &--after {
+            right: 16px;
+        }
+    }
+
+    &__divider {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: var(--pos);
+        width: 2px;
+        margin-left: -1px;
+        background: $title;
+        pointer-events: none;
+    }
+
+    &__handle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 48px;
+        height: 48px;
+        margin: -24px 0 0 -24px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: $bg;
+        color: $title;
+        border: 1px solid $title;
+        transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    // input invisible encima: maneja mouse, touch y teclado
+    &__range {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        opacity: 0;
+        cursor: ew-resize;
+
+        &:hover~&__divider &__handle,
+        &:active~&__divider &__handle {
+            transform: scale(1.1);
+        }
+    }
+
+    &__compare:hover &__handle,
+    &__range:active~&__divider &__handle {
+        transform: scale(1.1);
+    }
+
+    &__range:focus-visible~&__divider &__handle {
+        outline: 2px solid $title;
+        outline-offset: 4px;
+    }
+
+    // ---------- Maquetas (se escalan con cqw) ----------
+    &__mock {
+        width: 100%;
+        height: 100%;
+        padding: 5cqw;
+        display: flex;
+        flex-direction: column;
+        gap: 4cqw;
+    }
+
+    &__mock-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__mock-logo {
+        width: 9cqw;
+        height: 3cqw;
+    }
+
+    &__mock-links {
+        display: flex;
+        gap: 2cqw;
+
+        i {
+            display: block;
+            width: 6cqw;
+            height: 1.4cqw;
+        }
+    }
+
+    &__mock-hero {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6cqw;
+    }
+
+    &__mock-title {
+        margin: 0 0 1cqw;
+    }
+
+    &__mock-line {
+        display: block;
+        width: 70%;
+        height: 1.4cqw;
+
+        &--short {
+            width: 45%;
+        }
+    }
+
+    &__mock-btn {
+        display: block;
+        width: 16cqw;
+        height: 4.6cqw;
+        margin-top: 1.6cqw;
+    }
+
+    &__mock-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3cqw;
+        flex: 1;
+        min-height: 0;
+    }
+
+    // --- ANTES: genérico, apretado, sin jerarquía ---
+    &__mock--before {
+        background: #dcdcdc;
+
+        .contacto__mock-logo {
+            background: #6f7b8a;
+        }
+
+        .contacto__mock-links i {
+            background: #9aa3ad;
+            border-radius: 0;
+        }
+
+        .contacto__mock-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4.4cqw;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #3d4a5c;
+            max-width: 22ch;
+        }
+
+        .contacto__mock-line {
+            background: #b3b8bf;
+            width: 90%;
+        }
+
+        .contacto__mock-btn {
+            background: #4a76b8;
+            border-radius: 2px;
+        }
+
+        .contacto__mock-cards span {
+            background: #c2c6cc;
+            border: 1px solid #a7acb3;
+        }
+    }
+
+    // --- DESPUÉS: tu estilo ---
+    &__mock--after {
+        background: $cream;
+
+        .contacto__mock-logo {
+            background: $ink;
+            border-radius: 999px;
+        }
+
+        .contacto__mock-links i {
+            background: rgba($ink, 0.35);
+            border-radius: 999px;
+        }
+
+        .contacto__mock-title {
+            @include serif(300, 144);
+            font-size: 6.4cqw;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            color: $ink;
+            max-width: 14ch;
+        }
+
+        .contacto__mock-line {
+            background: rgba($ink, 0.18);
+            border-radius: 999px;
+        }
+
+        .contacto__mock-btn {
+            background: $ink;
+            border-radius: 999px;
+        }
+
+        .contacto__mock-cards span {
+            border-radius: 3cqw;
+
+            &:nth-child(1) {
+                background: $sage;
+            }
+
+            &:nth-child(2) {
+                background: $lilac;
+            }
+
+            &:nth-child(3) {
+                background: $sand;
+            }
+        }
+    }
+
+    // ---------- Responsive ----------
+    @media (max-width: $bp-tablet) {
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+
+        &__title {
+            max-width: 16ch;
+        }
+
+        &__compare {
+            border-radius: 28px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+            transition: none !important;
+        }
+    }
+}

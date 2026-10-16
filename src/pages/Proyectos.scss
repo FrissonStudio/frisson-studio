@@ -1,0 +1,372 @@
+$cream: #ede6db;
+$ink: #2f2b2a;
+$muted: #6e655f;
+
+$bg: #1a1a1a;
+$title: #d4c5a9;
+$text: #ccc2af;
+$gold: #c8a97e;
+
+$font-serif: 'Fraunces', Georgia, serif;
+$font-sans: 'Figtree', system-ui, sans-serif;
+
+$bp-tablet: 1024px;
+$bp-mobile: 640px;
+
+@mixin serif($weight: 300, $opsz: 144) {
+    font-family: $font-serif;
+    font-weight: $weight;
+    font-variation-settings: 'SOFT' 100,
+    'opsz'#{$opsz};
+}
+
+.proyectos {
+    background: $cream; // se ve en las esquinas redondeadas de la sección oscura
+    font-family: $font-sans;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    // ---------- Hero ----------
+    &__hero {
+        position: relative;
+        overflow: hidden;
+        color: $ink;
+
+        // anillos tenues, eco de la sección Servicios
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -12vw;
+            width: clamp(320px, 52vw, 720px);
+            aspect-ratio: 1;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: repeating-radial-gradient(circle,
+                    transparent 0 46px,
+                    rgba($ink, 0.1) 46px 47px);
+            -webkit-mask-image: radial-gradient(circle, #000 25%, transparent 70%);
+            mask-image: radial-gradient(circle, #000 25%, transparent 70%);
+            pointer-events: none;
+        }
+    }
+
+    &__hero-wrap {
+        position: relative;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: clamp(24px, 4vw, 56px) clamp(20px, 5vw, 48px) clamp(96px, 13vw, 176px);
+    }
+
+    &__title {
+        @include serif(300, 144);
+        font-size: clamp(3rem, 9.5vw, 8.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.03em;
+        max-width: 11ch;
+        margin: 0;
+        animation: proyectos-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+        em {
+            font-style: italic;
+            font-weight: 300;
+            color: $gold;
+        }
+    }
+
+    &__hero-foot {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 32px;
+        margin-top: clamp(32px, 5vw, 64px);
+        animation: proyectos-rise 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+    }
+
+    &__lead {
+        max-width: 44ch;
+        margin: 0;
+        color: $muted;
+        font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+        line-height: 1.5;
+    }
+
+    // Dato contextual: solo el conteo real
+    &__count {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        margin: 0;
+        padding-top: 14px;
+        border-top: 1px solid rgba($ink, 0.25);
+        white-space: nowrap;
+    }
+
+    &__count-num {
+        @include serif(300, 144);
+        font-size: clamp(2.4rem, 4vw, 3.4rem);
+        line-height: 1;
+        letter-spacing: -0.02em;
+    }
+
+    &__count-label {
+        color: $muted;
+        font-size: 0.95rem;
+    }
+
+    // ---------- Sección oscura ----------
+    &__work {
+        background: $bg;
+        color: $text;
+        border-radius: clamp(28px, 4vw, 56px) clamp(28px, 4vw, 56px) 0 0;
+        position: relative;
+    }
+
+    &__work-wrap {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: clamp(48px, 7vw, 96px) clamp(20px, 5vw, 48px) clamp(80px, 12vw, 160px);
+        padding-bottom: 0px;
+    }
+
+    // ---------- Filtro ----------
+    &__bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px 32px;
+        padding-bottom: 28px;
+        margin-bottom: clamp(36px, 5vw, 64px);
+        border-bottom: 1px solid rgba($gold, 0.3);
+    }
+
+    &__filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__filter {
+        padding: 9px 20px;
+        border: 1px solid rgba($title, 0.3);
+        border-radius: 999px;
+        background: transparent;
+        color: $title;
+        font-family: $font-sans;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.35s, color 0.35s, border-color 0.35s;
+
+        &:hover {
+            border-color: $gold;
+            color: $gold;
+        }
+
+        &.is-active {
+            background: $gold;
+            border-color: $gold;
+            color: $bg;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $title;
+            outline-offset: 4px;
+        }
+    }
+
+    &__status {
+        margin: 0;
+        color: $text;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+
+    // ---------- Grilla ----------
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(36px, 4vw, 56px) clamp(24px, 3.5vw, 48px);
+        align-items: start;
+    }
+
+    // ---------- Responsive ----------
+    @media (max-width: $bp-tablet) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: $bp-mobile) {
+        &__hero-foot {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+
+        // los filtros se deslizan en una sola línea
+        &__filters {
+            flex-wrap: nowrap;
+            width: calc(100% + 20px);
+            overflow-x: auto;
+            padding-bottom: 4px;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__filter {
+            flex: none;
+        }
+    }
+}
+
+// ---------- Tarjeta (misma estructura que SelectedWork) ----------
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px;
+    background: rgba($title, 0.05);
+    border: 1px solid rgba($title, 0.08);
+    overflow: hidden;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    animation: proyectos-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--i, 0) * 0.09s);
+
+    &:hover {
+        background: rgba($title, 0.08);
+        border-color: rgba($gold, 0.35);
+    }
+
+    // Escenario del laptop
+    &__mockup2 {
+        aspect-ratio: 16 / 11;
+        display: flex;
+        align-items: flex-end; // el laptop "nace" del borde inferior
+        justify-content: center;
+        padding: clamp(20px, 2.5vw, 36px) clamp(20px, 2.5vw, 36px) 0;
+        background: radial-gradient(ellipse at 50% 90%,
+                rgba($gold, 0.2),
+                transparent 65%);
+        overflow: hidden;
+    }
+
+    &__mockup2 img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transform-origin: bottom center;
+        filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.45));
+        transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    &:hover &__mockup2 img {
+        transform: translateY(-4px) scale(1.03);
+    }
+
+    // Info integrada a la tarjeta
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+        margin: 0;
+        padding: 24px clamp(20px, 2.5vw, 32px) 28px;
+        border-top: 1px solid rgba($title, 0.1);
+    }
+
+    &__category {
+        margin: 0;
+        color: $gold;
+        font-family: $font-sans;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        @include serif(400, 144);
+        margin: 0;
+        color: $title;
+        font-size: clamp(24px, 2.6vw, 30px);
+        line-height: 1.1;
+        a{
+            text-decoration: none;
+            color: $title;
+        }
+    }
+
+    &__description {
+        margin: 0;
+        color: rgba($text, 0.75);
+        font-family: $font-sans;
+        font-size: clamp(15px, 1.5vw, 17px);
+        line-height: 1.5;
+    }
+
+    // Opcional: un remate que cierre la tarjeta
+    &__link {
+        margin-top: auto;
+        padding-top: 8px;
+        color: $gold;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+
+        &::after {
+            content: ' →';
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+    }
+
+    &:hover &__link::after {
+        transform: translateX(4px);
+    }
+}
+
+@keyframes proyectos-rise {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .proyectos__title,
+    .proyectos__hero-foot,
+    .project-card {
+        animation: none;
+    }
+
+    .project-card__mockup2,
+    .project-card__mockup2 img,
+    .proyectos__filter {
+        transition: none;
+    }
+
+    .project-card:hover .project-card__mockup2 img {
+        transform: none;
+    }
+}

@@ -1,0 +1,164 @@
+$bg: #f0ede8;
+$ink: #2f2b2a;
+$muted: #6e655f;
+$line: #d9d3c8; // línea ajustada al nuevo fondo, un poco más fría que en la versión crema
+
+$sage: #cbd3b8;
+$lilac: #d8c9e0;
+$sand: #e2cfb4;
+
+$font-serif: 'Fraunces', Georgia, serif;
+$font-sans: 'Figtree', system-ui, sans-serif;
+
+$bp-tablet: 820px;
+
+// Forma de arco: parte superior totalmente redondeada, inferior suave
+$arch-radius: 999px 999px 40px 40px;
+
+@mixin serif($weight: 300, $opsz: 144) {
+    font-family: $font-serif;
+    font-weight: $weight;
+    font-variation-settings: 'SOFT' 100,
+    'opsz'#{$opsz},
+    'wght'#{$weight};
+}
+
+.estudio {
+    background: $bg;
+    color: $ink;
+    font-family: $font-sans;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    &__wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: clamp(56px, 10vw, 128px) clamp(20px, 5vw, 48px);
+    }
+
+    &__label {
+        font-size: 0.9rem;
+        color: $muted;
+        margin: 0 0 28px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: clamp(40px, 7vw, 104px);
+        align-items: center;
+    }
+
+    // ---------- Fotografía ----------
+    &__photo {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 4 / 5;
+        justify-self: start;
+    }
+
+    // contorno desplazado detrás del marco
+    &__ring {
+        position: absolute;
+        inset: -5% -9% 9% 9%;
+        border: 1.1px solid $ink;
+        border-radius: $arch-radius;
+        opacity: 0.55;
+        pointer-events: none;
+    }
+
+    &__frame {
+        position: absolute;
+        inset: 0;
+        border-radius: $arch-radius;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 24px;
+        background:
+            radial-gradient(120% 80% at 25% 15%, $lilac, transparent 60%),
+            radial-gradient(100% 80% at 80% 90%, $sage, transparent 65%),
+            $sand;
+
+        // foto real: ocupa todo el marco
+        img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        // etiqueta del placeholder
+        span {
+            font-size: 0.85rem;
+            color: $muted;
+            background: rgba($bg, 0.7);
+            padding: 5px 14px;
+            border-radius: 999px;
+        }
+    }
+
+    // ---------- Contenido ----------
+    &__title {
+        @include serif(300, 144);
+        font-size: clamp(2.3rem, 5.6vw, 4.4rem);
+        line-height: 1.06;
+        letter-spacing: -0.02em;
+        margin: 0;
+        max-width: 15ch;
+    }
+
+    &__intro {
+        margin: 28px 0 0;
+        max-width: 44ch;
+        color: $muted;
+        font-size: 1.05rem;
+    }
+
+    &__person {
+        margin-top: clamp(36px, 6vw, 64px);
+        padding-top: 28px;
+        border-top: 1px solid $line;
+        max-width: 44ch;
+    }
+
+    &__name {
+        @include serif(400, 72);
+        font-size: 1.9rem;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        margin: 0;
+        color: #C8A97E;
+    }
+
+    &__role {
+        margin: 4px 0 0;
+        font-size: 0.95rem;
+        color: $muted;
+    }
+
+    &__bio {
+        margin: 18px 0 0;
+    }
+
+    // ---------- Responsive ----------
+    @media (max-width: $bp-tablet) {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__photo {
+            max-width: 320px;
+            margin-left: 9%;
+        }
+    }
+}

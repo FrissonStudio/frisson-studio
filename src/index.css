@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background: #EDE6DB;
+  color: #000000;
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Para navegadores modernos basados en WebKit (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Para Internet Explorer y Edge antiguo */
+html {
+  -ms-overflow-style: none;
+}

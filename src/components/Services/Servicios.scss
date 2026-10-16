@@ -1,0 +1,237 @@
+$bg: #ede6db;
+$ink: #2f2b2a;
+$muted: #6e655f;
+$line: #d9cfbf;
+
+$sage: #cbd3b8;
+$lilac: #d8c9e0;
+$sand: #e2cfb4;
+
+$font-serif: 'Fraunces', Georgia, serif;
+$font-sans: 'Figtree', system-ui, sans-serif;
+
+$bp-tablet: 860px;
+
+@mixin serif($weight: 300, $opsz: 144) {
+    font-family: $font-serif;
+    font-weight: $weight;
+    font-variation-settings: 'SOFT' 100,
+    'opsz'#{$opsz};
+}
+
+.servicios {
+    background: $bg;
+    color: $ink;
+    font-family: $font-sans;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    &__wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: clamp(56px, 10vw, 128px) clamp(20px, 5vw, 48px);
+    }
+
+    &__label {
+        font-size: 0.9rem;
+        color: $muted;
+        margin: 0 0 28px;
+    }
+
+    &__title {
+        @include serif(300, 144);
+        font-size: clamp(2.4rem, 4.5vw, 5rem);
+        line-height: 1.04;
+        letter-spacing: -0.02em;
+        margin: 0;
+        max-width: 18ch;
+    }
+
+    &__intro {
+        max-width: 46ch;
+        margin: 28px 0 clamp(32px, 6vw, 72px);
+        color: $muted;
+        font-size: 1.05rem;
+    }
+
+    // Más vh = scroll más lento entre cartas.
+    &__stack {
+        &::after {
+            content: '';
+            display: block;
+            height: calc(var(--steps, 2) * 60vh);
+        }
+    }
+
+    // Pegado arriba, con el alto justo de la carta.
+    // Si tienes header fijo, súmale su alto a "top" (ej. top: 96px).
+    &__stage {
+        position: sticky;
+        top: 24px;
+        display: grid;
+        align-items: start;
+        padding-bottom: 56px; // espacio para que asomen las cartas de atrás
+    }
+
+    &__card {
+        --tint: #{$sage};
+
+        grid-area: 1 / 1; // todas las cartas ocupan la misma celda
+        display: grid;
+        grid-template-columns: 1.05fr 1fr 1.15fr;
+        gap: 20px 40px;
+        align-items: start;
+        padding: clamp(28px, 4vw, 52px);
+        background: var(--tint);
+        border: 1px solid rgba($ink, 0.08);
+        border-radius: 32px;
+        box-shadow: 0 30px 50px -32px rgba($ink, 0.35);
+        transform-origin: 50% 100%;
+        will-change: transform, opacity;
+
+        // el contenido se desvanece en las cartas de atrás
+        >* {
+            opacity: var(--content, 1);
+        }
+
+        &--sage {
+            --tint: #{$sage};
+        }
+
+        &--lilac {
+            --tint: #{$lilac};
+        }
+
+        &--sand {
+            --tint: #{$sand};
+        }
+
+        // los anillos "respiran" en la carta activa
+        &.is-active .servicios__rings circle:nth-child(2) {
+            transform: scale(1.08);
+        }
+
+        &.is-active .servicios__rings circle:nth-child(3) {
+            transform: scale(1.16);
+        }
+    }
+
+    // ---------- Cabecera de carta ----------
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__rings {
+        flex: none;
+        width: 68px;
+        height: 68px;
+        overflow: visible;
+
+        circle {
+            fill: none;
+            stroke: $ink;
+            stroke-width: 1.1;
+            transform-origin: 34px 34px;
+            transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+        }
+    }
+
+    // el círculo central toma el tinte de su carta
+    &__rings &__ring-fill {
+        fill: var(--tint);
+        stroke: none;
+    }
+
+    &__num {
+        display: block;
+        font-size: 0.85rem;
+        color: $muted;
+        margin-bottom: 2px;
+    }
+
+    &__name {
+        @include serif(400, 72);
+        font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        margin: 0;
+    }
+
+    &__desc {
+        margin: 6px 0 0;
+        max-width: 34ch;
+    }
+
+    // ---------- Píldoras ----------
+    &__chips {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        li {
+            font-size: 0.92rem;
+            padding: 6px 15px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    // ---------- Cierre ----------
+    &__close {
+        @include serif(300, 96);
+        font-style: italic;
+        font-size: clamp(1.5rem, 3.2vw, 2.3rem);
+        line-height: 1.25;
+        max-width: 26ch;
+        margin: clamp(24px, 5vw, 56px) 0 0;
+    }
+
+    // ---------- Responsive ----------
+    @media (max-width: $bp-tablet) {
+        &__card {
+            grid-template-columns: 1fr;
+            gap: 18px;
+            border-radius: 28px;
+        }
+    }
+
+    // ---------- Sin animación: lista normal de tarjetas ----------
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+            transition: none !important;
+        }
+
+        &__stack::after {
+            display: none;
+        }
+
+        &__stage {
+            position: static;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 0;
+        }
+
+        &__card {
+            transform: none !important;
+            opacity: 1 !important;
+            --content: 1;
+        }
+    }
+}
