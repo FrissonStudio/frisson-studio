@@ -33,7 +33,7 @@
     // Paralelogramo blanco que cruza el título
     &__shape {
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 17%;
 
         width: 60%;
@@ -67,7 +67,7 @@
 
         animation: hero-rise 1s cubic-bezier(0.22, 1, 0.36, 1) 0.9s both;
 
-    /*     // línea fina antes de la palabra
+        /*     // línea fina antes de la palabra
         &::before {
             content: '';
             width: 1.4em;
@@ -141,6 +141,16 @@
         &__content {
             margin-top: 40px;
             margin-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        &__studio {
+            font-size: .30em;
+            bottom: -0.4em;
+            right: 5em;
         }
     }
 }
