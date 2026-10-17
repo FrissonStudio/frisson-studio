@@ -158,7 +158,13 @@ $arch-radius: 999px 999px 40px 40px;
 
         &__photo {
             max-width: 320px;
-            margin-left: 9%;
+            margin-left: 5%;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .estudio {
+        position: relative;
     }
 }

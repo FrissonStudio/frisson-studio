@@ -367,3 +367,9 @@ $bp-tablet: 860px;
         }
     }
 }
+
+@media (max-width: 480px) {
+    .contacto {
+        position: relative;
+    }
+}

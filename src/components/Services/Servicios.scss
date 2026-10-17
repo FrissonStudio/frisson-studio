@@ -235,3 +235,9 @@ $bp-tablet: 860px;
         }
     }
 }
+
+@media (max-width: 480px) {
+    .servicios {
+        position: relative;
+    }
+}
