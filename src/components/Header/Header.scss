@@ -19,7 +19,7 @@
 
         color: #000000;
         font-family: 'Figtree', sans-serif;
-        font-size: 17px;
+        font-size: 20px;
         font-weight: 800;
         text-decoration: none;
 
@@ -167,6 +167,9 @@
 @media (max-width: 400px) {
     .header {
         grid-template-columns: 1fr auto 0fr;
+        &__link {
+            font-size: 17px;
+        }
     }
 }
 
