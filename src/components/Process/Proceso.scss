@@ -5,6 +5,7 @@
     // sin padding derecho: las barras nacen del borde de la pantalla
     padding: clamp(80px, 7vw, 180px) 0 clamp(80px, 7vw, 180px) 10%;
     overflow: hidden;
+    position: relative;
 
     &__inner {
         display: grid;
