@@ -109,7 +109,7 @@ $arch-radius: 999px 999px 40px 40px;
 
     // ---------- Contenido ----------
     &__title {
-        @include serif(300, 144);
+        @include serif(400, 144);
         font-size: clamp(2.3rem, 5.6vw, 4.4rem);
         line-height: 1.06;
         letter-spacing: -0.02em;

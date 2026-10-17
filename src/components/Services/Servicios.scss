@@ -45,7 +45,7 @@ $bp-tablet: 860px;
     }
 
     &__title {
-        @include serif(300, 144);
+        @include serif(400, 144);
         font-size: clamp(2.4rem, 4.5vw, 5rem);
         line-height: 1.04;
         letter-spacing: -0.02em;
