@@ -66,12 +66,12 @@ $arch-radius: 999px 999px 40px 40px;
 
     // marco + contorno: 90% del ancho de la imagen (5% menos por cada lado)
     &__shape {
-        inset: 8% 5% 0; 
+        inset: 8% 5% 0;
     }
 
     &__ring {
         position: absolute;
-        inset: -5% -9% 9% 9%;
+        inset: 17% -5% -7% 17%;
         border: 1.1px solid $ink;
         border-radius: $arch-radius;
         opacity: 0.55;
@@ -79,6 +79,11 @@ $arch-radius: 999px 999px 40px 40px;
     }
 
     &__frame {
+        width: 88%;
+        height: 100%;
+        margin: 0 auto;
+        transform: scaleY(0.9);
+        transform-origin: bottom;
         position: absolute;
         inset: 0;
         border-radius: $arch-radius;
