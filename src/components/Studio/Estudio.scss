@@ -125,7 +125,7 @@ $arch-radius: 999px 999px 40px 40px;
     }
 
     &__person {
-        margin-top: clamp(36px, 6vw, 64px);
+        margin-top: clamp(24px, 4vw, 40px);
         padding-top: 28px;
         border-top: 1px solid $line;
         max-width: 44ch;
