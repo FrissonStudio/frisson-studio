@@ -35,14 +35,7 @@ export default function Estudio() {
                                 Fundador · Diseñador y desarrollador web
                             </p>
                             <p className="estudio__bio">
-                                Soy diseñador y desarrollador web. Me interesan
-                                los desafíos que exigen mirar más allá de lo
-                                evidente, cuestionar lo establecido y encontrar
-                                nuevas formas de resolver un problema. Creo en
-                                el valor de investigar, experimentar y cuidar
-                                cada detalle, siempre con un propósito. Así nace
-                                Frisson: como un espacio para llevar esas ideas
-                                a soluciones digitales hechas con intención.
+                                Soy diseñador y desarrollador web. Me interesan los desafíos que exigen mirar más allá de lo evidente, y creo en investigar, experimentar y cuidar cada detalle con un propósito. Frisson nace de esas ideas.
                             </p>
                         </div>
                     </div>
