@@ -6,6 +6,19 @@ export default function Estudio() {
             <div className="estudio__wrap">
                 <div className="estudio__grid">
                     <div className="estudio__photo">
+                        <div className="estudio__shape" aria-hidden="true">
+                            <div className="estudio__ring" />
+                            <div className="estudio__frame" />
+                        </div>
+
+                        <img
+                            className="estudio__img"
+                            src="/projects/yio5.svg"
+                            alt="Benjamín, fundador de Frisson Studio"
+                            loading="lazy"
+                        />
+                    </div>
+                    {/* <div className="estudio__photo">
                         <div className="estudio__ring" aria-hidden="true" />
                         <div className="estudio__frame">
                             <img
@@ -14,7 +27,7 @@ export default function Estudio() {
                                 loading="lazy"
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="estudio__content">
                         <h2 className="estudio__title">
