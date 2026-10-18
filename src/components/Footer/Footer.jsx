@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Footer.scss'
 
-const EMAIL = 'hola@frisson.studio' // ← cambia por tu correo
+const EMAIL = 'frissonstudio7@gmail.com' // ← cambia por tu correo
 
 const NAV = [
     { label: 'Trabajo', href: '#trabajo' },
