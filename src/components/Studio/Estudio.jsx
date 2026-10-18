@@ -9,7 +9,7 @@ export default function Estudio() {
                         <div className="estudio__ring" aria-hidden="true" />
                         <div className="estudio__frame">
                             <img
-                                src="/projects/yio4.svg"
+                                src="/projects/yio5.svg"
                                 alt="Benjamín, fundador de Frisson Studio"
                                 loading="lazy"
                             />
