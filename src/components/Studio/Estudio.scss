@@ -153,7 +153,9 @@ $arch-radius: 999px 999px 40px 40px;
     // ---------- Responsive ----------
     @media (max-width: $bp-tablet) {
         &__grid {
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         &__photo {
