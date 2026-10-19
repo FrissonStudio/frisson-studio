@@ -48,7 +48,7 @@ function Header() {
     return (
         <header className="header" ref={headerRef}>
             <a
-                href={isHome ? '#trabajo' : '/#trabajo'}
+                href="/proyectos"
                 className="header__link"
                 data-text="VER PROYECTOS"
             >
