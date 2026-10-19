@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 import projects from '../data/projects.json'
 import Cursor from '../components/Cursor/Cursor'
 import './ProyectoDetalle.scss'
@@ -10,6 +11,10 @@ const toArray = (value) => {
 
 function ProyectoDetalle() {
     const { slug } = useParams()
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    }, [slug])
 
     const project = projects.find((item) => item.slug === slug)
 
