@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">FS — Frisson Studio</title>
+  <desc id="desc">Monograma editorial FS en color dorado suave.</desc>
+  <rect width="320" height="320" fill="none"/>
+  <g fill="#C8A97E" font-family="Bodoni 72, Didot, 'Bodoni MT', 'Times New Roman', serif" font-weight="400">
+    <text x="62" y="213" font-size="220" textLength="148" lengthAdjust="spacingAndGlyphs">F</text>
+    <text x="128" y="247" font-size="194" textLength="132" lengthAdjust="spacingAndGlyphs">S</text>
+  </g>
+</svg>
