@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="14" fill="#1A1A1A"/>
+  <text x="13" y="65"
+        font-family="Georgia, serif"
+        font-size="60" fill="#C8A97E">F</text>
+  <text x="38" y="79"
+        font-family="Georgia, serif"
+        font-size="60" fill="#EDE6DB">S</text>
+</svg>
